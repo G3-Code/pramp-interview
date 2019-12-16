@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      /* --------------------
+     Add your styling here
+     -------------------- */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .calculator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        width: 300px;
+        height: 60vh;
+        flex-direction: column;
+      }
+      button {
+        width: 50px;
+        border: 1px solid darkblue;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+      .row {
+        width: 250px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #row-border {
+        margin-top: 10px;
+      }
+      .display-result {
+        width: 250px;
+        height: 50px;
+        border: 1px solid magenta;
+        font-size: 25px;
+      }
+      input.display-result:focus {
+        outline-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <!----------------------
+    Add your markup here
+    ------------------------>
+      <div class="row">
+        <input type="text" value="" class="display-result" disabled />
+      </div>
+      <div class="row">
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+      </div>
+      <div class="row">
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+      </div>
+      <div class="row">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+      </div>
+      <div class="row">
+        <button value="0">0</button>
+      </div>
+      <div class="row" id="row-border">
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+      </div>
+    </div>
+    <script>
+      /* --------------------
+     Add your code here
+    --------------------- */
+    </script>
+  </body>
+</html>
